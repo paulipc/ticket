@@ -6,7 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="61e3da065aa94826927aa36961828d03" Name="Diagram1">
         <EntityTypeShape EntityType="ticketModel.Detail" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ticketModel.Ticket" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ticketModel.Ticket" Width="1.5" PointX="3.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ticketModel.fk_ticket_details" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

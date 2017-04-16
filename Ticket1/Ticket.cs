@@ -14,6 +14,12 @@ namespace Ticket1
     
     public partial class Ticket
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Ticket()
+        {
+            this.Detail = new HashSet<Detail>();
+        }
+    
         public int TicketID { get; set; }
         public System.DateTime Created { get; set; }
         public string UserID { get; set; }
@@ -25,5 +31,8 @@ namespace Ticket1
         public string Status { get; set; }
         public string Category { get; set; }
         public string Description { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Detail> Detail { get; set; }
     }
 }

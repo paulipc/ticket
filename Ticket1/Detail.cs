@@ -19,5 +19,7 @@ namespace Ticket1
         public System.DateTime Created { get; set; }
         public string UserID { get; set; }
         public string DDescription { get; set; }
+    
+        public virtual Ticket Ticket { get; set; }
     }
 }
